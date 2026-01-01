@@ -36,6 +36,7 @@ PRINTER_CODE = os.getenv("PRINTER_ACCESS_CODE")  # Printer access code - Run ini
 PRINTER_IP = os.getenv("PRINTER_IP")  # Printer local IP address - Check wireless on printer
 PRINTER_NAME = os.getenv("PRINTER_NAME")  # Printer name - Check wireless on printer
 SPOOLMAN_BASE_URL = os.getenv("SPOOLMAN_BASE_URL")
+SPOOLMAN_PUBLIC_URL = os.getenv("SPOOLMAN_PUBLIC_URL")
 SPOOLMAN_API_URL = f"{SPOOLMAN_BASE_URL}/api/v1"
 AUTO_SPEND = _env_to_bool("AUTO_SPEND", False)
 TRACK_LAYER_USAGE = _env_to_bool("TRACK_LAYER_USAGE", False)

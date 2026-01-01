@@ -1,10 +1,20 @@
 version: "3"
 services:
+  spoolman:
+    image: ghcr.io/donkie/spoolman:latest
+    container_name: spoolman
+    restart: unless-stopped
+    ports:
+      - "7912:8000"  # 你可以透過 localhost:7912 看
+    volumes:
+      - ./spoolman_data:/home/app/.local/share/spoolman
+
+
   openspoolman:
     build: .
     env_file: "config.env"
     ports:
-      - "8001:8000"
+      - "8001:8001"
     volumes:
       - ./logs:/home/app/logs
       - ./data:/home/app/data

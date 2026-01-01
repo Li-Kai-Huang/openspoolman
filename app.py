@@ -11,6 +11,7 @@ from config import (
     BASE_URL,
     AUTO_SPEND,
     SPOOLMAN_BASE_URL,
+    SPOOLMAN_PUBLIC_URL,
     EXTERNAL_SPOOL_AMS_ID,
     EXTERNAL_SPOOL_ID,
     PRINTER_NAME,
@@ -53,6 +54,7 @@ def fronted_utilities():
 
   return dict(
     SPOOLMAN_BASE_URL=SPOOLMAN_BASE_URL,
+    SPOOLMAN_PUBLIC_URL=SPOOLMAN_PUBLIC_URL,
     AUTO_SPEND=AUTO_SPEND,
     AMS_MODELS_BY_ID=ams_models_by_id,
     color_is_dark=color_is_dark,
